@@ -1,0 +1,43 @@
+{
+	"name": "server-guard",
+	"version": "0.0.1",
+	"description": "",
+	"main": "dist/index.js",
+	"scripts": {
+		"start": "npm run prod",
+		"build": "npm-run-all clean transpile",
+		"serve": "node ./dist/index.js",
+		"dev": "concurrently npm:dev-*",
+		"dev-build": "tsc -w",
+		"dev-run": "nodemon dist",
+		"prod": "npm-run-all build serve",
+		"transpile": "tsc",
+		"clean": "rimraf dist",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Server-Guard/bot.git"
+	},
+	"keywords": [
+		"discord",
+		"bot"
+	],
+	"author": "David Snyder",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Server-Guard/bot/issues"
+	},
+	"homepage": "https://github.com/Server-Guard/bot#readme",
+	"dependencies": {
+		"admin": "^1.4.1",
+		"discord.js": "^12.5.3",
+		"firebase": "^8.6.5"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.3.2"
+	}
+}
