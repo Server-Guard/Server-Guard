@@ -31,8 +31,10 @@
 	"homepage": "https://github.com/Server-Guard/bot#readme",
 	"dependencies": {
 		"admin": "^1.4.1",
+		"discord-buttons": "^3.1.1",
 		"discord.js": "^12.5.3",
-		"firebase": "^8.6.5"
+		"firebase": "^8.6.5",
+		"firebase-admin": "^9.9.0"
 	},
 	"devDependencies": {
 		"dotenv": "^10.0.0",
