@@ -4,6 +4,7 @@ export enum RootCollection {
 }
 
 export enum GuildCollection {
-	VERIFIEDUSERS = "verified-users"
+	VERIFIED_USERS = "verified-users",
+	SESSION_LOGS = "session-logs"
 }
 
